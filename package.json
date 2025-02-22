@@ -1,0 +1,46 @@
+{
+  "name": "vaccine-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:aws": "ts-node -P tsconfig.test.json src/scripts/test-aws-config.ts",
+    "clean:db": "ts-node -P tsconfig.test.json src/scripts/clean-test-data.ts"
+  },
+  "dependencies": {
+    "@aws-amplify/auth": "^6.9.1",
+    "@aws-sdk/client-bedrock-runtime": "^3.731.1",
+    "@aws-sdk/client-dynamodb": "^3.721.0",
+    "@aws-sdk/lib-dynamodb": "^3.721.0",
+    "@heroicons/react": "^2.2.0",
+    "@types/node": "20.11.19",
+    "@types/react": "18.2.57",
+    "@types/react-datepicker": "^7.0.0",
+    "@types/react-dom": "18.2.19",
+    "autoprefixer": "10.4.17",
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.6.7",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^4.4.7",
+    "date-fns": "^4.1.0",
+    "next": "14.1.0",
+    "next-auth": "^4.24.11",
+    "postcss": "8.4.35",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-datepicker": "^7.5.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^5.4.0",
+    "rss-parser": "^3.13.0",
+    "tailwindcss": "3.4.1",
+    "typescript": "5.3.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/uuid": "^9.0.8"
+  }
+}
